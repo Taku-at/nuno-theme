@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Niconne&display=swap');
+@import 'config';
+@import 'nav';
+@import 'utilities';
+@import 'mobile';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: $font-lato;
+    color: $primary-color;
+}
+
+.offset::before {
+    display: block;
+    content: '';
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+
+/*--- Landing Page ---*/
+.home-inner {
+    background-image: url('/img/computers.png');
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+
+    h1 {
+        font-size: 3.8rem;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        text-shadow: .1rem .1rem .8rem #000;
+        padding-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-style: italic;
+        text-transform: capitalize;
+        text-shadow: .1rem .1rem .5rem #000;
+        padding-bottom: 1.5rem;
+    }
+}
+
+/*--- Course Section ---*/
+.narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+
+    h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/*--- Features Section ---*/
+.jumbotron {
+    margin-bottom: 0;
+    padding: 2rem 0 3.5rem;
+    border-radius: 0;
+
+    h3.heading {
+        font-size: 1.9rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.9rem;
+    }
+
+    .heading-underline {
+        width: 3rem;
+        height: 0.2rem;
+        background-color: $main-btn-color;
+        margin: 0 auto;
+    }
+
+}
+
+/*--- icons ---*/
+.feature {
+
+    .svg-inline--fa {
+        color: $main-btn-color;
+    }
+
+
+    h3 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding-bottom: .4rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Resources Section */
+.fixed-background {
+
+    .dark {
+        background-color:  rgba(0, 0, 0, 0.75);
+        color: #fff;
+        padding: 7rem 2rem;
+
+        h3 {
+            margin-bottom: 2rem;
+        }
+    
+        p {
+            margin-top: 1.5rem;
+        }
+    
+    }
+
+    .fixed-wrap {
+
+        .fixed {
+            background-image: url('/img/apple.png');
+            z-index: -1;
+        }
+    }
+}
+
+/*--- Clients Section ---*/
+.clients {
+
+    // width: 100%;
+
+    .row{
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+
+    blockquote {
+
+        .svg-inline--fa  {
+            color: $main-btn-color;
+            margin: 1rem;
+        }
+
+        .clients-hr {
+            border-top: 2px solid $main-btn-color;
+
+        }
+    }
+
+    }
+}
+
+/*--- Contact Section ---*/
+footer {
+    background-color: #40474e;
+    color: #fff;
+    padding: 2rem 0 2rem;
+    margin-top: 1rem;
+
+    img { 
+        height: 3rem;
+        margin: 1.5re 0;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: $main-btn-color;
+        }
+
+        .svg.svg-inline-fa {
+            font-size: 1.6rem; 
+            margin: 1.2rem 5rem 0 0;
+        }
+    }
+
+    .socket {
+        width: 100%;
+        border-top: .2rem solid #666b71;
+        margin-top: 3rem;
+    }
+}

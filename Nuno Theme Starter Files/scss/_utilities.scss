@@ -1,0 +1,44 @@
+/*--- Button ---*/
+.btn-lg {
+    border-width: medium;
+    border-radius: 5px;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    outline: none;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        color: #000;
+        background: #acac;
+        outline: none;
+    }
+}
+
+.btn-outline-light {
+    border-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        border: none;
+    }
+}
+
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: #fff;
+    background-color: $main-btn-color;
+    border-color: $main-btn-color;
+
+    &:hoer {
+        background-color: $secondary-btn-color;
+        border-color: $secondary-btn-color;
+    }
+}

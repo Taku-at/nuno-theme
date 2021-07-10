@@ -1,0 +1,30 @@
+/* --- Navigation ---- */
+.navbar {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6) !important;
+
+    .navbar-brand {
+
+        img {
+             height: 2rem;
+        }
+    }
+
+    .navbar-nav {
+        li {
+            padding-right: .7rem;
+
+            .nav-link {
+                color: #fff;
+                padding-top: .8rem;
+
+                &.active,
+                &:hover {
+                    color: #1ebba3;
+                }
+            }
+        }
+    }
+}
